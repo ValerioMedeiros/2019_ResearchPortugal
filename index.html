@@ -1,0 +1,1224 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Colaboração Brasil/Portugal</title>
+
+		<meta name="description" content="BTestBox - A Tool for Testing B Translators and Coverage of B Models">
+		<meta name="author" content="Valério Medeiros">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<link rel="icon" href="./img/G_BR_PT.svg.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<!--<link rel="stylesheet" href="css/theme/black.css"> --->
+		<link rel="stylesheet" href="css/theme/sky.css">
+		<!--Aqui muda a cor do fundo-->
+		<link rel="stylesheet" href="css/theme/2019_IFRN.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<!--<link rel="stylesheet" href="lib/css/monokai.css">-->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Latex Formulas 
+            Repositório da biblioteca:https://www.mathjax.org/#gettingstarted
+            Exemplo aqui:https://jsbin.com/?html,output
+     --><!-- 
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async
+				src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
+		</script>-->
+		<script src="js/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async
+				src="js/tex-mml-chtml.js">
+		</script>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div id="footer">
+			<div style="display : flex;">
+				<div style="flex: 35%">
+					<img src='./img/2019_TAP_Portugal/logo_IFRN.png' alt='Image' style='width: 15vmin;  background: none; text-shadow: none; box-shadow: none; border: none;' />
+					<img src='./img/2019_TAP_Portugal/logotipo_UFRN_short.png' alt='Image' style='width: 10vmin;   background: none; text-shadow: none; box-shadow: none; border: none;' />
+				</div>
+				<div style="flex: 45%; font-family: Quicksand, sans-serif;">
+					<p>
+						Instituto Federal de Educação Ciência e Tecnologia do Rio Grande do Norte (IFRN)
+					</p>
+				</div>
+				<div style="flex: 20%; font-family: Quicksand, sans-serif;">   
+					<!-- Felipe Fontoura [Public domain]-->
+					<img src='./img/G_BR_PT.svg.png' alt='Image' style='width: 5vmin;   background: none; text-shadow: none; box-shadow: none; border: none; align-self: center;' />
+				</div>
+			</div>
+	
+	
+		</div>
+	
+		<div class="reveal">
+	
+	
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+	
+				<section data-transition="fade">
+						
+					
+	
+					<section data-transition="fade">
+							<aside class="notes">
+								
+							</aside>
+
+							<h2 style="text-transform: unset;">Oportunidades de colaboração em pesquisa, educação ou desenvolvimento de sistemas críticos e IoT.</h2>
+	
+							<div style="display : flex;">
+								<div style="flex: 50%">
+									<!-- <h2 style="text-transform: unset;">Colaboração de pesquisa</h2> --->
+									<img src='./img/G_BR_PT.svg.png' alt='Image' style='height: 17vmin; background: none; text-shadow: none; box-shadow: none; border: none;' />
+									
+								</div>
+								<div style="flex: 50%">
+									<!-- source https://pixabay.com/pt/photos/equipe-consolida%C3%A7%C3%A3o-de-equipe-3373638/ (Grátis para uso comercial 
+										Atribuição não requerida-->
+								<img src='./img/team-3373638_960_720.jpg' alt='Image' style='height: 17vmin; background: none; text-shadow: none; box-shadow: none; border: none; ' />
+								
+								</div>
+							</div>
+						<br>
+						
+						
+						<div class="row">
+							<div class="column">
+								<ul>
+									<li><a href="http://godev.ifrn.edu.br/valerio/"> <u>Valério Medeiros Jr.</u></a> (IFRN-<img class="semborda" src="./img/2019_TAP_Portugal/flag-of-Brazil.png" style='margin: 0ch; background: none; text-shadow: none; box-shadow: none; border: none;' height="15em" >)</li>
+								</ul>
+							</div>
+						</div>
+	
+					</section>
+				</section>
+	
+				<section data-transition="fade">
+					
+					<aside class="notes">
+												
+							( ) - Por que usar métodos formais?
+							( ) -  Video
+
+							( ) - Demonstração da ferramenta.
+							( ) - Estudo de caso em desenvolvimento.
+							
+							( ) - As minhas experiências 
+							( ) - BEval, B2LLVM, BTestBox
+							( ) - O projeto Digitu		
+					
+					</aside>
+					<h2>Roteiro</h2>
+						<div style="flex: 100%">
+							<br><br>
+							<ul>
+								<li> Metodologia de desenvolvimento de sistemas críticos</li><br>
+								<!-- -->
+								<li> Demonstração de ferramentas</li><br>
+								<li> Minhas experiências anteriores</li><br>
+								<li> Considerações finais / questionamentos</li><br>
+							
+							</ul>
+						</div>
+					
+	
+				</section>
+				<section>
+					<section>
+						<!-- iframe data-autoplay height="100%" width="100%" src="https://youtu.be/YBmAoeBJUOg"></iframe>-->
+
+						<iframe width="1273" height="716" src="https://www.youtube.com/embed/YBmAoeBJUOg" 
+						  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+				</section>
+				<section>
+						<h2> Contexto da minha experiência</h2>
+						<div style="display : flex;">
+								<div style="flex: 30%">
+										<ul>
+											<li>Gradução em ciência da computação - UFRN</li>
+											<li>Mestrado e Doutorado em Sistemas e Computação - PPgSC/UFRN</li>
+											<li>Estágio Pós Doutoral em Aix en Provence & ClearSy - França</li>
+
+										</ul>
+								</div>
+								<div style="flex: 70%">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/YBmAoeBJUOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								</div>
+						</div>
+						
+				</section>
+
+				<section>
+
+
+						<h2> Motivação </h2>
+					
+						<div style="display : flex;">
+								<div style="flex: 30%">
+										<ul>
+												<li><a href="https://pt.wikipedia.org/wiki/Boeing_737_MAX#Suspens%C3%A3o_mundial_de_2019"> Boeing 737 Max</a>
+													<ul> <li> US$ 2,9 bilhões entre abril e junho de 2019 e +300 mortes.</li>
+													</ul>
+												</li>
+												<li><a href="https://pt.wikipedia.org/wiki/Therac-25">Therac 25</a>
+													<ul> <li> +5 mortes + incontável prejuízo.</li>
+													</ul>
+												</li>
+												<li><a href="https://pt.wikipedia.org/wiki/Ariane_5">Ariane 5 </a>
+													<ul>
+														<li> US$ 370 m + anos de pesquisa</li>
+													</ul>
+												</li>
+												<li><a href="http://folk.uio.no/gerardo/model-checking/Garfinkel-Software-Bugs.htm"> e outros revelados.</a> </li>
+											</ul>
+								</div>
+								<div style="flex: 70%">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/gp_D8r-2hwk?start=12" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								</div>
+						</div>
+						
+				</section>
+				<section data-transition="fade" >
+						<h2>Introdução</h2>
+						
+							<ul>
+								<li>O método B uma <u>consolidada</u> metodologia formal que tem <u>sido usada por vários anos em sistemas críticos.</u>. </li>
+								<li>É baseado na notação de máquina abstrata <u>(AMN)</u> e na linguagem de subsituição generalizada <a href="http://www.cse.unsw.edu.au/~carrollm/probs/Papers/Morgan-98.pdf">(GSL)</a>  </li>
+								<ul><li>Suporta <u>projeto modular</u>; cada componente especifica um componente do software em um diferente nível de abstração. </li></ul>
+								<center>
+								<img class="imgsemborda" src="./img/2019_TAP_Portugal/articlefigs/SAC/bmethod.png" style='height: 27vh; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+								</center>
+								<li>Curso online gratuito: <a href="https://mooc.imd.ufrn.br/course">mooc.imd.ufrn.br/course</a>   </li>
+							</ul>
+				</section>
+				
+				<!--
+				<section data-transition="fade">
+					<iframe  width="1273" height="716" src="https://www.youtube.com/embed/1T5WeWoEsFs?start=400&end=960" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</section>
+				-->
+				<section data-transition="fade" >
+						<h3><a href="https://www.youtube.com/embed/1T5WeWoEsFs?start=400&end=960" target="_new1"> Exemplo Ticket e demonstração</h3>
+						
+							<center>
+									<img class="imgsemborda" src="./img/ExampleCashier.png" style='height: 47vh; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+							</center>	
+						</a>
+				</section>
+
+				<section data-transition="fade">
+						<h2> Visão Geral</h2>
+						<br>
+							<img class="imgsemborda" src="./img/2019_TAP_Portugal/articlefigs/SAC/arcBTestBox2_new_noBG.png" style='height: 30vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'><br>
+								 
+								<ul>
+								<li> Open source (GNU,  MIT).</li>
+								<li> Experiênicias anteriores: <a href="https://github.com/ValerioMedeiros/b2llvm">B2LLVM</a>; <a href="https://github.com/ValerioMedeiros/BEval">BEval</a>; <a href="https://github.com/ValerioMedeiros/btestbox">BTestBox</a></li>
+							</ul>
+					</section>
+		
+				<section>
+					<h2> Projeto Digitu </h2>
+
+				</section>
+
+
+				<section data-background-image="https://cdn.pixabay.com/photo/2014/07/08/10/47/team-386673_960_720.jpg" >
+					<h2 style="color:white">Colaboração</h2>
+				</section>
+
+				<section>
+					Roborês autonomos
+					Problemas relacionados.
+					Até que ponto dar a autonomia ?
+
+				</section>
+
+	
+
+				<section>
+						<h2>Visão geral da Internet das Coisas (IoT)</h2>
+						<div style="display : flex;">
+							<div style="flex: 45%">
+								<br>
+								<h4>O que é?</h4>
+								<p>IoT é um paradigma inovador que está rapidamente ganhando terreno no cenário das telecomunicações sem fio moderna [Atori, Iera, Morabito, 2012].</p>
+		
+							</div>
+							<div style="flex: 55%">
+								<h5>
+									<img src="./img/2018_IotDigitu/smart-home-2769210_1280.jpg" style='height: 40vmin;  '>
+								</h5>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Visão geral da Internet das Coisas (IoT)</h2>
+						<div style="display : flex;">
+							<div style="flex: 55%">
+								<br>
+								<p>A ideia básica é a presença generalizada em torno de nós de uma variedade de coisas ou objetos - como tags de identificação por radiofrequência (RFID), sensores, atuadores, telefones celulares, etc. Os quais podem interagir uns
+									com os outros e cooperar com seus vizinhos para alcançar metas comuns [Atori, Iera, Morabito, 2012]</p><br>
+								<h4>Em outras palavras:</h4>
+								<p>É uma rede de objetos físicos que possuem tecnologia embarcada com sensores e atuadores capazes de coletar e transmitir dados.</p>
+		
+		
+							</div>
+							<div style="flex: 45%">
+								<h5>
+									<img class="imgsemborda" src="./img/2018_IotDigitu/iot-3337536_640.png" style='height: 40vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+								</h5>
+							</div>
+						</div>
+						<aside class="notes">
+							Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
+						</aside>
+					</section>
+		
+					<!--
+						<section>
+							<h2>Exemplos de uso da IOT</h2>
+							<div style="display : flex;">
+								<div style="flex: 55%">
+									<BR>
+									<H4> Sensores para agricultura</H4>
+									<p>Longe dos centros urbanos, dispositivos IoT também já ajudam produtores agrícolas a melhorar suas plantações. Existem sensores, por exemplo, capazes de detectar a temperatura e a umidade do ar e ativar sistemas de irrigação.
+										Pela internet, podem acessar bancos de dados e projeções meteorológicas, se programar com antecedência e até mesmo regular o uso de água, tornando as lavouras mais econômicas e sustentáveis.</p>
+								</div>
+								<div style="flex: 45%; margin-top: 50px">
+									<h5>
+										<img class="imgsemborda" src="https://blog.aegro.com.br/wp-content/uploads/2018/03/11-sensores-no-campo.png" style='height: 40vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+									</h5>
+								</div>
+							</div>
+						</section>
+						<section>
+							<h2>Exemplos de uso da IOT</h2>
+							<div style="display : flex;">
+								<div style="flex: 55%">
+									<BR>
+									<H4> Serviços de saúde inteligentes</H4>
+									<p>A saúde é outra área onde as aplicações da Internet das Coisas prometem causar uma verdadeira revolução. Um ótimo exemplo que já vem sendo implementado em algumas clínicas e hospitais permite que pacientes usem dispositivos
+										automatizados e conectados de medição de batimentos cardíacos e até coleta de sangue e que enviam os resultados diretamente para um sistema de controle, facilitando e agilizando o atendimento.</p>
+								</div>
+								<div style="flex: 45%; margin-top: 50px">
+									<h5>
+										<img class="imgsemborda" src="http://www.assespropr.org.br/wp-content/uploads/2018/07/pulse-635x399.jpg" style='height: 40vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+									</h5>
+								</div>
+							</div>
+						</section>  -->
+		
+		
+					<!---<section>
+						<h1>A Ideia geral</h1>
+						A idéia básica é a presença generalizada em torno de nós de uma variedade de coisas ou objetos - como tags de identificação por radiofrequência (RFID), sensores, atuadores, telefones celulares, etc. Os quais podem interagir uns com os outros e cooperar
+						com seus vizinhos para alcançar metas comuns [Atori, Iera, Morabito, 2012]
+						<br>
+						<img class="imgsemborda" src='./img/2018_IotDigitu/iot-3337536_640.png' style='height: 40vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+					</section>-->
+		
+					<section>
+		
+						<h1>Onde IoT está?</h1>
+						<section>
+							<div style="display : flex;">
+								<div style="flex: 55%">
+									<br><br><br>
+									<ul>
+										<li>Smartwatch </li><br>
+										<li>Celulares</li><br>
+										<li>Geladeiras</li><br>
+										<li>Hospitais</li><br>
+										<li>...</li><br>
+									</ul>
+								</div>
+								<div style="flex: 45%">
+									<br>
+		
+									<img class="imgsemborda" src='./img/2018_IotDigitu/smart-home-2005993_640.png' style='height: 40vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+		
+								</div>
+							</div>
+						</section>
+		
+						<section>
+							<img class="imgsemborda" src='./img/2018_IotDigitu/como_iniciar_spencer-_-699369-unsplash.jpg' style='height: 60vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+							<br> Na sua escola?
+						</section>
+		
+						<section>
+		
+							<video autoplay loop muted inline>
+									<source src="./img/2018_IotDigitu/Dashboard - 10847.mp4" type="video/mp4" autoplay loop />
+								</video>
+		
+							<br> Na sua casa?
+						</section>
+		
+						<section>
+							<img class="imgsemborda" src='./img/2018_IotDigitu/andres-urena-470137-unsplash.jpg' style='height: 60vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+							<p>A casa do futuro chegou? </p>
+						</section>
+						<section>
+							<img class="imgsemborda" src='./img/2018_IotDigitu/onde_esta piron-guillaume-361682-unsplash.jpg' style='height: 60vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+							<p>Uma cirurgia remota?</p>
+						</section>
+		
+					</section>
+					<section>
+		
+						<h2>Quais atuais características tecnológicas favorecem o uso de IoT?</h2>
+						<ul>
+							<li>
+								<h4>Baixo custo dos dispositivos embarcados;</h4>
+							</li>
+							<ul>
+								<li>
+									<h4>Redução do consumo de energia;</h4>
+								</li>
+								<li>
+									<h4>Baixo custo dos sensores;</h4>
+								</li>
+							</ul>
+							<li>
+								<h4>Aumento da conectividade dos dispositivos;</li>
+							<li>
+								<h4>Uso de api externas (IBM platform - Bluemix/Google/Amazon);</h4>
+							</li>
+							<li>
+								<h4>Produção de muitos dados que podem ser explorados;</h4>
+							</li>
+							<li>
+								<h4>Aumento da capacidade das baterias e redução de tamanho.</h4>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Investimentos em IoT</h1>
+						<section>
+							<br><br>
+							<ul>
+								<li>
+									<h4>Até 2020 haverá cerca de dois dispositivos conectados para cada pessoa na terra (Gartner,2017).</h4>
+								</li>
+		
+								<ul>
+									<li>
+										<h6>20 bilhões de dispositivos.</h6>
+									</li>
+								</ul>
+		
+								<li>
+									<h4>Cerca de 19 trilhões de dólares serão movimentados nesse segmento até o fim dessa década (EBC, 2017).</h4>
+								</li>
+							</ul>
+		
+							<img class="imgsemborda" src="./img/2018_IotDigitu/network.jpg" style="width: 38%; height: 38%">
+						</section>
+		
+						<section>
+							<img class="imgsemborda" src='./img/2018_IotDigitu/56c739672e52651c008b8394-1920-1404.png' style='height: 60vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+							<p>Investimentos estimados no mundo em 2015.</p>
+		
+						</section>
+		
+					</section>
+		
+	
+				<section data-transition="fade">
+						<aside class="notes">
+								<font size="-0.5">
+									<ul>
+										<li>In the B community, these code generators demand additional safety criteria, mainly because they are used in critical applications. </li>
+										<li>Testing techniques can be used as an instrument for an in-depth validation of the system.  </li>
+										<ul>
+												<li>They are used as a lower-cost complement of formal proofs.</li>
+												<li>They can quickly identify failures introduced during the code generation.</li>
+												<li>Also, some certification standards require the use of software testing techniques. </li>
+										</ul>
+											<!--<li>Testing techniques may supplement formal methods during the verification and validation process. </li>-->								
+										</ul>
+									</ul>
+								</font>
+						</aside>
+						
+
+						<h2>Motivation in B Method  </h2>
+						<br>
+						<div style="display : flex;">
+							<div style="flex: 55%">
+								<ul>
+										
+									<li>B code generators <u>demand additional safety criteria</u>.</li>
+										 <ul><li>They are used in critical applications. </li></ul>
+									<li>Testing techniques can be used as <u>an instrument for an in-depth validation</u> of the system.  </li>
+									<ul>
+											<li>A lower-cost complement of formal proofs.</li>
+											<li>Some certifications require the use of software testing techniques. </li>
+									</ul>
+
+									<!--<li>Testing techniques may supplement formal methods during the verification
+									and validation process. </li>-->
+									
+									
+									</ul>
+								</ul>
+							</div>
+							<div style="flex: 45%">
+								<br>
+								<img class="imgsemborda" src="./img/2019_TAP_Portugal/lupa.png" style='height: 50vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+							</div>
+						</div>
+						
+						
+						
+				</section>
+
+				<section data-transition="fade">
+						<section data-transition="fade">
+								<aside class="notes">
+										<font size="-0.5">
+												<ul>
+														<li>Can be used individually on <u>terminal command</u> or as an <u>extension for Atelier B</u> (a popular IDE developed to model, refine, verify, and generate code for B Method).</li>
+														<ul>
+															<li>The test cases are written in B so that the models are
+																translated and executed in any target language.</li>
+															<li>The tool receives a B implementation, the target translator, a compiler, a coverage criterion, the folder project, and the logic expression solver (ProB)</li>
+															#next let's see it working!
+														</ul>
+												</ul>
+										</font>
+								</aside>
+							<h2>BTestBox's GUI</h2>
+							<div style="display : flex;">
+								<div style="flex: 45%">
+									<br>
+									<ul>
+											<li>Can be used as an <u>extension for Atelier B</u>.</li>
+											<ul>
+												<li>The test cases are written in B.</li>
+												<li>The tool receives a B implementation, the target translator, a compiler, a coverage criterion, the folder project, and the logic expression solver (ProB)</li>
+		
+											</ul>
+									</ul>
+								</div>
+								<div style="flex: 55%">
+								<img class="imgsemborda" src="./img/2019_TAP_Portugal/articlefigs/SAC/GUI.png" style='height: 40vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+								</div>
+							</div>
+						</section>
+						<section data-transition="fade">
+								<aside class="notes">
+										<ul> 
+											<li>The user fills the inputs: project name, criterion, compiler, path of expression solver.</li>
+											</li>
+											<li>In the future, we are interested to connect with other logic solvers.</li>
+												
+											#next How it work in background
+										</ul>
+								</aside>
+							
+							<img class="imgsemborda" src="./img/BTestBox_f.gif" style='height: 70vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'><br>
+							 
+						</section>
+
+				</section>
+				<section data-transition="fade">
+						<aside class="notes">
+								<ul> 
+									<li> BTestBox generates <u>a control flow graph</u> and uses Hoare logic to generate a <u>predicate characterizing</u> the possible values for the execution paths, according to the
+										chosen criterion.</li>
+										<li> Then, the predicates are solved and the values of the input and
+										output parameters are stored for each valid solution. </li>
+										<ul><li>Our tool prepares B components capable of executing and checking the execution of the test cases after
+										the translation.</li></ul>
+										<li> Finally, the test components are translated and executed, and
+										the metrics are reported.</li>
+									<li>Follow the steps .</li>
+									#next let's see the control flow graph
+								</ul>
+						</aside>
+					<h2>Creating the test cases</h2>
+					<br>
+					<ul>
+						<li> BTestBox generates <u>a control flow graph</u> and uses Hoare logic to generate a <u>predicate characterizing</u> the possible values for the execution paths, according to the
+						chosen criterion.</li>
+						<li> The predicates are <u>solved</u> and the values of the input and
+						output parameters are <u>stored</u> for each valid solution. </li>
+						
+						<li> The test components are <u>translated and executed, and
+						the metrics are reported</u>.</li>
+					</ul>
+					<img class="imgsemborda" src="./img/2019_TAP_Portugal/articlefigs/BMethod.png" style='height: 22vh; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+				</section>
+				
+				
+				<section data-transition="fade">
+						<aside class="notes">
+								<ul><li>Technique, that iteratively
+										doubles one of the factors while halving the other one. The variant and invariant
+										clauses are standard B elements, which are necessary to prove the correctness of the
+										operation, including its termination.</li> 
+									<li>BTestbox generates the following all paths.</li>
+								</ul>
+								In accordance with the test criterion:
+								<ul>
+										<li>Statement Coverage criterion require only one test case; </li>
+										<li>Branch Coverage criterion require only two test cases; </li>
+										<li>Path Coverage criterion require only three test cases. </li>
+										<li>Some test cases can be not relevant, when the model is verified. </li>	
+								</ul>
+								#Next How is generated the test cases?
+								Extras ():
+								Since the operation has a loop, the graph is cyclic, and contains potentially infinite paths (even though only finite paths are allowed, due to the fact that each loop must terminate in B and has been proved as such). 
+								Instead of repeating the instructions inside the loop and generating different paths for each execution of the loop, \textit{BTestBox} computes the paths inside the loop once and uses them to represent all the paths created with the loop's repetition. 
+								We assume this because of the B method termination property - a loop always has to end.
+							
+								
+						
+						</aside>
+					<h2>Example - Control flow graph</h2>
+					<h4>RussMult</h4>
+					<div style="display : flex;">
+						<div style="flex: 50%">
+							<!--- <pre><code data-trim data-noescape>
+							<pre class="bash"><code data-trim data-noescape>-->
+							<pre class="javascript"><code data-trim data-noescape>
+	IMPLEMENTATION RussianMult_i
+	REFINES RussianMult
+	CONCRETE_VARIABLES xx,yy,total
+	INVARIANT xx ∈ N ∧ yy ∈ N ∧ total ∈ N
+	INITIALISATION
+		xx,yy,total := 0,0,0
+	OPERATIONS
+	 RussMult(aa,bb) =
+	  xx:=aa; yy:=bb; total:=0;
+	  WHILE xx > 0 DO
+		IF xx mod 2 = 1 THEN
+			total := total + yy 
+		END;
+		xx := xx / 2; 
+		yy := yy * 2
+	  INVARIANT xx ∈ N ∧
+		total+xx*yy = aa * bb
+	  VARIANT xx
+	  END
+	 END
+	END
+	// The variant and invariant are necessary to prove
+	// the correctness of the operation, including its termination.
+									</code>
+							</pre>
+							
+						</div>
+						<div style="flex: 50%">
+							<img class="imgsemborda" src="./img/2019_TAP_Portugal/articlefigs/lacoGrafo.png" style='height: 37vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+							<!-- BTestbox generates the following paths:<br>-->
+							
+								<ul>
+									<li>  1, 2, 3, 4, 5, 6, 7, 8, 9, 5, 10; </li>
+									<li>  1, 2, 3, 4, 5, 6,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8, 9, 5, 10; </li>
+									<li>  1, 2, 3, 4, 5,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.</li>
+								</ul>
+						</div>
+					</div>   
+				</section>
+				<section data-transition="fade">
+					<h3>Generating Predicates</h3>
+					<br>
+					Based on Hoare triples (\(\{P\} C \{Q\}\))<br>
+					\(P\) the precondition <br>
+					\(C\) the command <br> 
+					\(Q\) is the post-condition <br> 
+					<!--The precondition may be computed from the command and post-condition. --><br>
+					<br>
+					<ul>
+						<li>The predicates for each path generated by <i>BTestBox</i> are used to create test cases. </li>
+						<li>Each criterion requires one different condition to be satisfied.</li>
+					</ul>
+					
+	
+				<aside class="notes">
+						<font size="-0.5">
+							Our tool relies on Hoare triples to compute how a command changes the state. 
+							<br>
+							We use the notation: {P} C {Q}, where<br>
+							(P) represents the precondition for the execution of the command <br>
+							(C), and (Q) is the post-condition established after the command. <br>
+							(P) and (Q) are states described by first-order logic formula. <br>
+							The precondition may be computed from the command and post-condition.<br> 
+							Each criterion requires one different condition to be satisfied.<br>
+						</font>
+				</aside>
+	
+	
+				</section>
+				
+				<section data-transition="fade">
+						<aside class="notes">
+								<font size="-0.5">
+									Enter in the while (True) and in the IF (False).
+								</font>
+						</aside>
+					<h3>Branch coverage criterion - Test case 1 </h3>
+							   
+					<p>
+							\(\exists(xx, yy, total).(xx > 0 \wedge xx\ mod\ 2 = 1 \wedge xx \in \mathbb{N} \wedge total + xx * yy = aa * bb) \) <br>
+							\(\wedge  xx : \mathbb{N} \wedge yy : \mathbb{N} \wedge total : \mathbb{N} \wedge aa : \mathbb{N} \wedge bb : \mathbb{N}   \) 
+							<br><br>
+							In the next step, it is necessary to find if the predicate is verified by at least one solution. 
+							Our tool uses the solver to find a suitable variable interpretation (if it exists).
+							<br>
+							A possible solution is (<u>aa = 1, bb = 0</u>, xx = 0, yy = 0, total = 0). 
+							<br>
+							
+	
+					</p>
+				   
+				</section>
+				<section data-transition="fade">
+						<aside class="notes">
+								<font size="-0.5">
+									Not in the while (False).
+								</font>
+						</aside>
+					<h3>Branch coverage criterion - Test case 2 </h3>
+							   
+					<p>
+							\(\exists(xx, yy, total).(xx \leq 0 \wedge xx \in \mathbb{N} \wedge total + xx * yy = aa * bb) \)<br>
+							\(\wedge  xx : \mathbb{N} \wedge yy : \mathbb{N} \wedge total : \mathbb{N} \wedge aa : \mathbb{N} \wedge bb : \mathbb{N}   \) 
+							<br><br>
+							<br>
+							<br>
+							A possible solution is (<u>aa = 0, bb = 0</u>, xx = 0, yy = 0, total = 0). 
+							<br>
+						
+					</p>
+				</section>
+			   <section data-transition="fade">
+				<aside class="notes">
+						<font size="-0.5">
+							Not in the while (False).
+						</font>
+				</aside>
+					<h3>Branch coverage criterion - Test case 2 </h3>
+					<p>
+							\(\exists(xx, yy, total).(xx \leq 0 \wedge xx \in \mathbb{N} \wedge total + xx * yy = aa * bb) \)<br>
+							\(\wedge  xx : \mathbb{N} \wedge yy : \mathbb{N} \wedge total : \mathbb{N} \wedge aa : \mathbb{N} \wedge bb : \mathbb{N}   \) 
+							<br><br>
+							<br>
+							Other possible solution is (<u>aa = 2, bb = 0</u>, xx = 0, yy = 0, total = 0). 
+							<br><br>
+							B Method with a verified implementation ensures that the loop ends.
+							<br><br>
+							This test case is not relevant!
+					</p>
+		   		</section>		
+				<!-- <section data-transition="fade">
+						<h3>Branch coverage criterion</h3>
+								<br>
+								It will lead to the following test cases:
+								<center>
+								<table style ="border=1; border: 1px solid black;  padding: 10px; text-align: left;">
+								<thead><tr>
+									<th></th>
+									<th style="text-align: center;" colspan=2 >Test 1</th>
+									
+									
+									<th style="text-align: center;" colspan=2 >Test 2</th>
+									
+								</tr></thead>
+								<tbody><tr>
+									<td>Variable</td>
+									<td>Input</td>
+									<td>Output</td>
+									<td>Input</td>
+									<td>Output</td>
+								</tr>
+								<tr>
+									<td>aa</td>
+									<td>1</td>
+									<td>1</td>
+									<td>2</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>bb</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								 <tr>
+									<td>xx</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								 <tr>
+									<td>yy</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								 <tr>
+									<td>total</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								</tbody>
+							</table>
+							</center>
+							<ul>
+								<li>SC criterion require only one test case; </li>
+								<li>BC criterion require only two test cases; </li>
+								<li>PC criterion require only three test cases. </li>	
+							</ul>
+		
+		
+						</p>
+					
+					</section>
+					-->
+				<section data-transition="fade">
+					<h2> Creating test case files</h2>
+					<br>
+							
+							<ul>
+								
+								<li>Its improvements will provide interesting information and metrics about the code.</li><br>
+								
+								<img class="imgsemborda" src="./img/2019_TAP_Portugal/articlefigs/SAC/arcBTestBox2_new_noBG.png" style='height: 30vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'><br>
+							 
+							<li>Compatibility to <u>any B Translators</u>.</li>
+							<li>Possible to use <u>other solvers</u>.</li>
+							</ul>
+				</section>
+				<section data-transition="fade">
+						<aside class="notes">
+								<font size="-0.5">
+									
+									<ul>
+									<!--%\item The clause group exercises the structures sees, extends, constants, constraints, imports, promotes, sets, variables, and local operations. Those elements are put in test in groups and separately to observe the changes in the predicate that each can perform.-->
+									<li> The <u>Clauses</u> group, with 14 examples, the tests observe the changes that each element can perform in the predicate.</li>
+									
+									<!--%\item Operation calls employ the operation calls in different contexts. -->
+									<li> The <u>Operation Call</u> group, with 26 examples in different contexts exercises operation calls.</li>
+									
+									<!-- %\item Depth blocks are sensitive to the instructions if-else, case, skip, while and assignment. They are grouped and nested to max depth of three. -->
+									<li> The <u>Depth blocks</u> group, with 89 examples, is sensitive to the if-else, case, skip, while, and assignment instructions. They are grouped and nested to the maximum depth of three.</li>
+									
+									<!--  %\item The industrial project is responsible for diverse contributions to \textit{BTestBox}, with B structures non previous tested. Unfortunately, the tests generated for this case are very time consuming due the necessity of sets expansions.-->
+									<li> The <u>Industrial project</u> group, with one big example, is responsible for different contributions to the <i>BTestBox</i>, with non-previously tested B syntactic structures. Unfortunately, the tests generated for this case are very time-consuming due to the necessity of set expansions.</li>
+									</ul>
+								</font>
+						</aside>
+					<h2>Experiments</h2>
+	
+					BTestBox was  tested  for  a  variety  of  different  B  syntactic  features,  with  the goal 
+					of assuring the correctness of the process and the functionality of the tool.
+					Our tool ran more than 120 proved implementations.
+					
+					 
+					
+					<ul>
+						<!--%\item The clause group exercises the structures sees, extends, constants, constraints, imports, promotes, sets, variables, and local operations. Those elements are put in test in groups and separately to observe the changes in the predicate that each can perform.-->
+						<li> The <u>Clauses</u> group, with 14 examples.</li>
+						
+						<!--%\item Operation calls employ the operation calls in different contexts. -->
+						<li> The <u>Operation Call</u> group, with 26 examples in different contexts.</li>
+						
+						<!-- %\item Depth blocks are sensitive to the instructions if-else, case, skip, while and assignment. They are grouped and nested to max depth of three. -->
+						<li> The <u>Depth blocks</u> group, with 89 examples.</li>
+						
+						<!--  %\item The industrial project is responsible for diverse contributions to \textit{BTestBox}, with B structures non previous tested. Unfortunately, the tests generated for this case are very time consuming due the necessity of sets expansions.-->
+						<li> The <u>Industrial project</u> group, with one big example, is responsible for different contributions to the <i>BTestBox</i>.</li>
+					</ul>
+				</section>
+	
+				<section data-transition="fade">
+						<aside class="notes">
+								<font size="-0.5">
+									
+										All of the examples shown in Table 2 can be easily executed in a leased cloud computer (one compute-optimised virtual machines with 20 dedicated vCPUs for one hour) costing less than one USdollar  with  similar  results.  Our  experiments  have  shown  that  processing  time is  reduced  approximately  proportionally  when  we  use  a  computer  with  more processing cores.
+			
+								</font>
+						</aside>
+					<h2>Experiments with parallelization</h2>
+					<br>
+					<ul>
+						<li>All of the examples shown can be easily executed in a leased cloud computer (with 20 dedicated vCPUs for one hour) costing less than one US dollar  with  similar  results.  </li>
+						<li>The time is reduced  approximately  proportionally  when  we  use  a  computer  with  more processing cores.</li>
+					</ul>
+				<img class="imgsemborda" src="./img/2019_TAP_Portugal/articlefigs/TableNewResults.png" style='height: 30vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'><br>
+		
+				   
+				</section>
+	
+				<!--<section data-transition="fade">
+					<h2>Related work</h2>
+					<ul>
+							<li>In [Marinescu et al. 2015], the authors presented an overview of the current state of the art for model-based testing tools that use requirement-based specification languages. </li>
+							<li>BZ-TT generates test cases from B and Z models. </li>
+							<ul>
+									<li>It relies on constraint solving, and its goal is to test every operation. </li>
+									<li>It is a private tool and a public version is not available. </li>
+							</ul>
+							<li>ProTest is an automatic test environment for B specifications. </li>
+								<ul>
+									<li>It uses model-checking techniques to find test sequences that satisfy its test generation parameters. </li>
+									<li>The user has to define the requirements to be satisfied by the test cases. These requirements are operations that must be covered and predicates that must hold true. </li>
+									<li>The tool only generates abstract test cases.</li>
+									<ul><li>Our tools generate concrete tests.</li></ul>
+								</ul>
+					</ul>
+				</section>-->
+				<section data-transition="fade">
+						<h2>Related work</h2>
+						<ul>
+							   <li> Tools developed in our research group:</li>
+							   <ul>
+									<li>BETA relies on input space partitioning and logical coverage criteria to generate unit tests from abstract B machines. 
+										The tool automates all steps of the test generation process. </li>
+									<li> BTestBox  is completely automatic in all steps of the test generation process based directly on implementation modules which are a closer representation of the actual software. 
+										Another difference is that BETA is focused on unit testing.
+										BTestBox tests is focused on the entire module and its functions. </li>
+								</ul>
+						</ul>
+					</section>
+
+				
+					<section data-transition="fade">
+							<h2> Conclusions and final considerations</h2>
+							<br>
+								The main differences between the previous and new versions
+							are: 
+							<ul>
+								<li>(i) inclusion of several code coverage criteria, the previous version supported
+								only Statement Coverage; </li>
+								<li>(ii) new HTML interface, including reports generated
+								for each coverage criterion;</li>
+								<li>(iii) better support to new case studies both
+								academic and industrial. This support is based on the use of parallelization
+								techniques, in order to improve scalability.</li>
+							</ul>
+							<img class="imgsemborda" src="./img/2019_TAP_Portugal/threads.png" style='height: 30vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'><br>
+					
+							<!--
+								The two main contributions of BTestBox are:
+								<ul> 
+									<li>(i) a fully automatic model-based process for generation of executable test
+									cases satisfying a given criterion for B implementations, thus avoiding the man-
+									ual construction of test cases;</li>
+									<li> (ii) verifying the correctness of the B compiler
+									while testing the translated code developed with the B formal method process
+									using the supported criteria test cases consequently, thus helping to find dead
+									code and unnecessary conditions.</li>
+								</ul>
+							-->
+					</section>	
+				<section data-transition="fade">
+					<aside class="notes">
+							<font size="-0.5">
+									Future work:
+								<ul>
+								<!--%\item The clause group exercises the structures sees, extends, constants, constraints, imports, promotes, sets, variables, and local operations. Those elements are put in test in groups and separately to observe the changes in the predicate that each can perform.-->
+								<li> to support the MC/DC and to connect to other logic solvers <u>Clauses</u> group, with 14 examples, the tests observe the changes that each element can perform in the predicate.</li>
+								<li> to reduce the granularity to better enjoy </li>
+								</ul>
+							</font>
+					</aside>					
+
+					<h2> Conclusions and final considerations</h2>
+					<br><br>
+					<p>
+					The parallelisation techniques applied reduced the process time and extended the power to generate tests for larger samples. 
+					We also configured the tool to run it on a remote computer with more processor cores. This improvement
+					required changes that made our tool compatible with the most common operating systems (Windows, OS X and Linux). 
+					</p>
+					<img class="imgsemborda" src="./img/2019_TAP_Portugal/OS.png" style='height: 15vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'><br>
+					
+					<p>
+					All recent advances presented here are encouraging, showing performance numbers that are one order of magnitude 
+					better than for the previous version of the tool.
+					</p>
+	
+	
+				</section>
+	
+			   
+	
+			   
+			  
+	
+				<!--
+					<section data-transition="fade">
+						<h2>Exemplos de uso da IOT</h2>
+						<div style="display : flex;">
+							<div style="flex: 55%">
+								<BR>
+								<H4> Sensores para agricultura</H4>
+								<p>Longe dos centros urbanos, dispositivos IoT também já ajudam produtores agrícolas a melhorar suas plantações. Existem sensores, por exemplo, capazes de detectar a temperatura e a umidade do ar e ativar sistemas de irrigação.
+									Pela internet, podem acessar bancos de dados e projeções meteorológicas, se programar com antecedência e até mesmo regular o uso de água, tornando as lavouras mais econômicas e sustentáveis.</p>
+	
+							</div>
+							<div style="flex: 45%; margin-top: 50px">
+								<h5>
+									<img class="imgsemborda" src="https://blog.aegro.com.br/wp-content/uploads/2018/03/11-sensores-no-campo.png" style='height: 40vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+								</h5>
+							</div>
+						</div>
+	
+					</section>
+	
+					<section data-transition="fade">
+						<h2>Exemplos de uso da IOT</h2>
+						<div style="display : flex;">
+							<div style="flex: 55%">
+								<BR>
+								<H4> Serviços de saúde inteligentes</H4>
+								<p>A saúde é outra área onde as aplicações da Internet das Coisas prometem causar uma verdadeira revolução. Um ótimo exemplo que já vem sendo implementado em algumas clínicas e hospitais permite que pacientes usem dispositivos
+									automatizados e conectados de medição de batimentos cardíacos e até coleta de sangue e que enviam os resultados diretamente para um sistema de controle, facilitando e agilizando o atendimento.</p>
+	
+							</div>
+							<div style="flex: 45%; margin-top: 50px">
+								<h5>
+									<img class="imgsemborda" src="http://www.assespropr.org.br/wp-content/uploads/2018/07/pulse-635x399.jpg" style='height: 40vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+								</h5>
+							</div>
+						</div>
+	
+					</section>  -->
+	
+	
+				<!---<section data-transition="fade">
+					<h1>A Ideia geral</h1>
+					A idéia básica é a presença generalizada em torno de nós de uma variedade de coisas ou objetos - como tags de identificação por radiofrequência (RFID), sensores, atuadores, telefones celulares, etc. Os quais podem interagir uns com os outros e cooperar
+					com seus vizinhos para alcançar metas comuns [Atori, Iera, Morabito, 2012]
+					<br>
+	
+					<img class="imgsemborda" src='./img/2018_IotDigitu/iot-3337536_640.png' style='height: 40vmin; width: auto; background: none; text-shadow: none; box-shadow: none; border: none;'>
+	
+	
+				</section>-->
+	
+				
+				<!-- 
+				<section id="fragments=none#/ ">
+					<br>
+					<h2>Quais os requisitos <b>estudantis</b> atingidos?</h2>
+					<br><br>
+					<h3 class="fragmentSEM ">Uso de tecnologias acessíveis aos nossos alunos;</h3><br>
+					<h3 class="fragmentSEM ">Amplo campo de pesquisa em mecatrônica e informática;</h3><br>
+					<h3 class="fragmentSEM ">Prováveis colaborações com prefeituras e IFs.</h3><br>
+				</section>
+				<section id="fragments=none#/ ">
+					<br>
+					<h2>Quais os requisitos <b>institucionais</b> contemplados?</h2>
+					<br><br>
+					<h3 class="fragmentSEM ">Solução para automatizada para frequência de alunos;</h3><br>
+					<h3 class="fragmentSEM ">Solução para controle de acesso em portas;</h3><br>
+					<h3 class="fragmentSEM ">Solução portátil pode resolver vários outros problemas (em desenvolvimento);</h3><br>
+					<h3 class="fragmentSEM ">Capaz gerar dados pouco estudados para as instituições.</h3><br>
+				</section>
+				<section id="fragments=none#/ ">
+					<br>
+					<h2>Quais os requisitos <b>comerciais</b> esperados?</h2>
+					<br>
+					<b><h3 class="fragmentSEM ">Baixíssimos custos:</h3></b>
+					<h4 class="fragmentSEM ">Custa metade do preço da solução de mercado mais próxima e com mais funcionalidades;</h4>
+					<b><h3 class="fragmentSEM ">Cógigo aberto:</h3></b>
+					<h4 class="fragmentSEM ">Permite ser licenciado sobre outras licenças;</h4>
+					<b><h3 class="fragmentSEM ">Escalável:</h3></b>
+					<h4 class="fragmentSEM ">Facilmente podemos atender vários paíes;</h4>
+					<b><h3 class="fragmentSEM ">Seguro:</h3></b>
+					<h4 class="fragmentSEM ">Muitos recursos usados em bancos adotamos.</h4>
+				</section>
+	
+	
+	
+	
+				
+				<section data-transition="fade">
+					<h2>PROJETO DIGITU</h2>
+					<p>Um projeto inteligente de <b>IoT</b> na escola.</p>
+				</section>
+	
+				<section data-transition="fade">
+					<section data-transition="fade">
+						<h2>Quem somos nós?</h2>
+						<p>Uma breve apresentação sobre o projeto.</p>
+					</section>
+	
+					<section data-transition="fade">
+						<h2>O projeto</h2>
+						<p>Falar um pouco sobre a <b>finalidade</b> do projeto, bem como citar um pouco sobre os <b>componentes</b> e o <b>campus Parnamirim</b>.</p>
+					</section>
+				
+					<section data-transition="fade">
+						<h2>Nossa motivação</h2>
+						<p>Descrever o nosso <b>intuito</b> enquanto projeto. Além disso, citar nossos planos para o <b>futuro</b> do Digitu.</p>
+					</section>
+				</section>
+	
+				<section data-transition="fade">
+					<section data-transition="fade">
+						<h2>Internet das coisas (IoT)</h2>
+						<p>Definir o termo Internet das Coisas de acordo com <b>referências bibliográficas</b>, bem como contar um pouco da <b>história</b> do termo.</p>
+					</section>
+	
+					<section data-transition="fade">
+						<h2>Aplicações</h2>
+						<p>Dar exemplos <b>cotidianos</b> de como a IoT pode ser aplicada.</p>
+					</section>
+				</section>
+	
+				<section data-transition="fade">
+					<section data-transition="fade">
+						<h2>Vantagens</h2>
+						<p>Por que usar a solução <b>Digitu</b>?</p>
+					</section>
+	
+					<section data-transition="fade">
+						<h3>Baixo custo de implementação</h3>
+						<p>Equipamentos comerciais apresentam custo entre <span class="fragmentSEM highlight-red "><b>R$ 40</b> e <b>R$ 2500</b></span>. Nossa solução possui custo entre <span class="fragmentSEM highlight-green "><b>R$ 15</b> e <b>R$ 700</b></span>.</p>
+					</section>
+				
+				<section data-transition="fade">
+					<h3>Uso de ferramentas open source</h3>
+					<p>A utilização de ferramentas de <b>código aberto</b> no desenvolvimento do projeto o torna <span class="fragmentSEM highlight-green "><b>acessível à comunidade</b></span>, além de baratear os custos com software.</p>
+				</section>
+	
+				<section data-transition="fade">
+					<h2>Viabilidade de instalação</h2>
+					<p>A maioria das soluções disponíveis no mercado possui <span class="fragmentSEM highlight-red "><b>uso restrito</b>.</span></p>
+					<p>Digitu é <span class="fragmentSEM highlight-green "><b>genérico</b></span> e pode ser usado em várias aplicações.</p>
+	
+				</section>
+			   
+	
+	
+	
+				<section data-transition="fade">
+					<h2>Considerações finais</h2>
+					<br>
+					<ul>
+						<li class="fragmentSEM">
+							<h3>IoT é uma área promissora e ampla;</h3>
+						</li><br>
+						<li class="fragmentSEM">
+							<h3>Mundialmente uma área de grandes investimentos e oportunidades;</h3>
+						</li><br>
+						<li class="fragmentSEM">
+							<h3>DIGITU é extensível e flexível para integração;</h3>
+						</li><br>
+						<li class="fragmentSEM">
+							<h3>Estamos abertos para colaboradoes e parceiros.</h3>
+						</li>
+					</ul>
+					<img src='./img/2018_IotDigitu/24628700.png' alt='Image' style='height: 20vmin; background: none; text-shadow: none; box-shadow: none; border: none;' />
+				</section>
+				-->
+				<section data-transition="fade">
+					<h2>Questions?</h2>
+					<p>Doubts and comments.</p>
+	
+					<div><img src="img/2018_IotDigitu/detective-1424831_640.png"  style='height: 30vmin; background: none; text-shadow: none; box-shadow: none; border: none;'><br>
+	
+					</div>
+					<p> Thank you for your attention!</p>
+	
+					<p> Presentation avaliable at: <a href="https://valeriomedeiros.github.io/2019_TAP/">valeriomedeiros.github.io/2019_TAP</a></p>
+				</section>
+				<section data-transition="fade">
+					<h2> Acknowledgement</h2>
+					<br><br><br><br><br>
+	
+					The work is partly supported by IFRN, UFRN, ClearSy and High Performance Computing Center at UFRN (NPAD). This study was financed in part by the Brazil (CAPES).
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
+					</aside>
+					
+				</section>
+				<section data-transition="fade">
+						<h2>Extras</h2>
+						<br>
+						<a href="index.html?print-pdf"> Export to PDF (Click here and CRTL+P)</a><br>
+						<br>
+						<a href="index.html?print-pdf&showNotes=true"> Export to PDF with notes (Click here and CRTL+P)</a>
+				</section>
+				
+	
+	
+			</div>
+	
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				math: {// Default way of add mathlatex with reveals using the separator \[   \] example at test/examples/math.html
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: '../../plugin/math/math.js', async: true }
+				]
+			});
+
+			// Shows the slide number using default formatting
+			Reveal.configure({ slideNumber: true });
+
+			// Slide number formatting can be configured using these variables:
+			//  "h.v": 	horizontal . vertical slide number (default)
+			//  "h/v": 	horizontal / vertical slide number
+			//    "c": 	flattened slide number
+			//  "c/t": 	flattened slide number / total slides
+			Reveal.configure({ slideNumber: 'c/t' });
+
+		</script>
+
+
+	</body>
+</html>
